@@ -56,4 +56,7 @@ class DynamicArray:
                 return                                 # exit immediately
         raise ValueError('value not found')           # only reached if no match    
     
-    
+    def extend(self, values):
+        """Append elements from iterable."""
+        for value in values:
+            self.append(value)
